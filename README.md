@@ -3,7 +3,7 @@
 
 # ✨ JavaScript based interview questions
 
-✅ JavaScript Basics
+## ✅ JavaScript Basics
 ### _#01._ 🟡 What is JavaScript and why is it used?
 
 JavaScript হলো একটি উচ্চ-স্তরের, ইন্টারপ্রিটেড প্রোগ্রামিং ভাষা যা মূলত ওয়েব ডেভেলপমেন্টে ব্যবহৃত হয়। এটি ওয়েব পেজে ইন্টারঅ্যাক্টিভিটি যোগ করে, যেমন ব্যবহারকারীর ইনপুটের প্রতিক্রিয়া, ডায়নামিক কনটেন্ট আপডেট, এবং জটিল ওয়েব অ্যাপ্লিকেশন তৈরি। এটি ক্লায়েন্ট-সাইড এবং সার্ভার-সাইড (Node.js এর মাধ্যমে) উভয় ক্ষেত্রেই কাজ করে। এর ব্রাউজার সামঞ্জস্যতা এবং নমনীয়তার কারণে এটি অত্যন্ত জনপ্রিয়।
@@ -36,7 +36,7 @@ JavaScript প্রাথমিকভাবে ওয়েব ডেভেল�
 
 লেক্সিকাল স্কোপ হলো JavaScript এর একটি নিয়ম যেখানে একটি ফাংশনের স্কোপ তার ডিক্লেয়ারেশনের সময় নির্ধারিত হয়, রানটাইমে নয়। এটি ফাংশনের নেস্টেড স্ট্রাকচারের উপর নির্ভর করে। উদাহরণস্বরূপ, একটি অভ্যন্তরীণ ফাংশন তার বাইরের ফাংশনের ভ্যারিয়েবল অ্যাক্সেস করতে পারে। এটি ক্লোজার তৈরির জন্য অত্যন্ত গুরুত্বপূর্ণ।
 
-✅ Functions and Execution
+## ✅ Functions and Execution
 ### _#07._ 🟡 What is a function and how does it work?
 
 ফাংশন হলো JavaScript-এর একটি ব্লক অফ কোড যা নির্দিষ্ট কাজ সম্পাদন করে এবং প্রয়োজনে পুনরায় ব্যবহার করা যায়। এটি সাধারণত ইনপুট (প্যারামিটার) গ্রহণ করে, কাজ সম্পাদন করে এবং ফলাফল (রিটার্ন ভ্যালু) ফেরত দেয়। ফাংশন ডিক্লেয়ার করা হয় `function` কীওয়ার্ড ব্যবহার করে। উদাহরণ: `function add(a, b) { return a + b; }`। এটি কল করা হলে, যেমন `add(2, 3)`, ফাংশনটি 5 ফেরত দেয়। ফাংশন কোডের পুনরাবৃত্তি কমায় এবং কোডকে সংগঠিত রাখে।
@@ -73,7 +73,7 @@ console.log(counter()); // 2
 ```
 এখানে `inner` ফাংশন `count` ভ্যারিয়েবলের রেফারেন্স ধরে রাখে। ক্লোজার ডেটা প্রাইভেসি এবং স্টেটফুল ফাংশন তৈরিতে ব্যবহৃত হয়।
 
-✅ Behind the Scenes
+## ✅ Behind the Scenes
 ### _#12._ 🟡 How does JavaScript work behind the scenes?
 
 JavaScript একটি single-threaded, non-blocking ভাষা যা V8 engine (Chrome-এ ব্যবহৃত) বা অন্যান্য ইঞ্জিনে চলে। এটি execution-এর সময় call stack, heap, এবং event loop ব্যবহার করে। Code execute হওয়ার সময়:  
@@ -99,7 +99,7 @@ JavaScript code parse হয়ে abstract syntax tree (AST) তৈরি ক�
 - **Macrotask**: Lower-priority tasks, যেমন `setTimeout`, `setInterval`, বা I/O events। এগুলো task queue-তে থাকে। উদাহরণ: `setTimeout(() => console.log('Macrotask'), 0);`  
 Event loop প্রথমে microtask queue খালি করে, তারপর একটি macrotask execute করে, এবং এই cycle চলতে থাকে। উদাহরণ: Promise-এর `.then` microtask হিসেবে আগে চলবে, তারপর `setTimeout` macrotask হিসেবে।
 
-✅ Hoisting, this, and Object-related
+## ✅ Hoisting, this, and Object-related
 ### _#16._ 🟡 What is hoisting in JavaScript?
 
 Hoisting হলো JavaScript-এর একটি behavior যেখানে variable এবং function declarations execution-এর আগে তাদের scope-এর শীর্ষে "hoisted" বা উঠে যায়। উদাহরণ: `console.log(x); var x = 5;` এটি `undefined` প্রিন্ট করে কারণ `var x` hoisted হয়, কিন্তু initialization হয় না। Function declarations পুরোপুরি hoisted হয়, যেমন: `foo(); function foo() { console.log('Hi'); }` কাজ করে। `let` এবং `const` hoisted হয় কিন্তু temporal dead zone-এ থাকে, তাই initialization-এর আগে access করলে error দেয়।
@@ -179,7 +179,7 @@ console.log(myObj.key); // new
 ```  
 JavaScript technically call by value-ই ব্যবহার করে, তবে objects-এর ক্ষেত্রে value হলো reference।
 
-✅ Control Flow
+## ✅ Control Flow
 ### _#24._ 🟡 What is an if-else statement and how does it work?
 
 If-else statement হলো JavaScript-এর একটি control flow structure যা condition-এর উপর ভিত্তি করে code execute করে। যদি condition true হয়, তবে `if` block-এর code চলে; অন্যথায় `else` block (যদি থাকে) চলে। Nested if-else বা else-if ও ব্যবহার করা যায়। উদাহরণ:  
@@ -233,7 +233,7 @@ Loops repetitive tasks সহজ করে।
 - **While Loop**: শুধু condition check করে, initialization এবং update separately handle করতে হয়। Unknown iterations বা complex conditions-এর জন্য ভালো। উদাহরণ: `let i = 0; while (i < 5) { console.log(i); i++; }`  
 For loop predictable iterations-এর জন্য, while loop dynamic বা conditional iterations-এর জন্য বেশি suitable। Both একই কাজ করতে পারে, কিন্তু syntax এবং use case ভিন্ন।
 
-✅ Modern JavaScript (ES6+)
+## ✅ Modern JavaScript (ES6+)
 ### _#29._ 🟡 What is destructuring?
 
 Destructuring হলো ES6-এর একটি feature যা array বা object থেকে values extract করে variables-এ assign করতে দেয়। এটি code-কে concise এবং readable করে।  
@@ -324,7 +324,7 @@ Immutability মানে data যা create হওয়ার পর change �
 - **reduce()**: Array-কে single value-এ reduce করে। উদাহরণ: `const sum = arr.reduce((acc, curr) => acc + curr, 0); // 6`  
 এগুলো original array modify করে না, immutable way-তে কাজ করে।
 
-✅ DOM & Browser
+## ✅ DOM & Browser
 ### _#38._ 🟡 What is the DOM and how does JavaScript interact with it?
 
 DOM (Document Object Model) হলো একটি programming interface যা HTML বা XML document-কে tree structure হিসেবে represent করে, যেখানে প্রতিটি element একটি node। JavaScript DOM-এর সাথে interact করে web page-এর content, structure, এবং style dynamically manipulate করতে। উদাহরণ:  
@@ -370,7 +370,7 @@ Clear করতে: `clearInterval(intervalId);`
 
 উভয়ই asynchronous, Web APIs দিয়ে handle হয়, এবং event loop-এর মাধ্যমে callback execute হয়। Timing animations, polling, বা delayed tasks-এ ব্যবহৃত।
 
-✅ Asynchronous JavaScript
+## ✅ Asynchronous JavaScript
 ### _#42._ 🟡 What is a promise and how does it work?
 
 Promise হলো JavaScript-এর একটি object যা asynchronous operation-এর eventual completion বা failure represent করে। এটি callback hell এড়াতে সাহায্য করে। Promise-এর তিনটি state:  
@@ -422,7 +422,7 @@ try {
 ```
 এখানে `try` fail করলে `catch` error ধরে, এবং `finally` সবসময় চলে। Try/catch synchronous এবং async (with `try/catch`) code-এ error handling-এর জন্য ব্যবহৃত। Async/await-এর সাথে try/catch Promise rejections handle করতে ব্যবহার হয়।
 
-✅ Advanced (Optional)
+## ✅ Advanced (Optional)
 ### _#45._ 🟡 What is a memory leak and how can you avoid it?
 
 Memory leak হলো এমন অবস্থা যখন JavaScript-এ memory allocated হয় কিন্তু properly released হয় না, ফলে application-এর performance কমে বা crash হতে পারে। Common causes: unused variables, forgotten timers, event listeners, বা circular references।  
@@ -478,7 +478,7 @@ console.log(typeof undefined); // "undefined"
 Limitations: `null`-এর জন্য `"object"` return করে এবং array/object distinction করতে পারে না। তাই `Array.isArray()` বা `instanceof` ব্যবহার করা হয়।
 
 # ✨ TypeScript based interview questions
-✅ 1. Basics of TypeScript
+## ✅ 1. Basics of TypeScript
 ### _#01._ 🔵 What is TypeScript and how is it different from JavaScript?
 
 TypeScript হলো একটি open-source programming language যা JavaScript-এর superset। এটি JavaScript-এ static typing এবং advanced features যোগ করে। TypeScript code compile হয়ে JavaScript-এ convert হয়, যা browser বা Node.js-এ চলে।  
@@ -543,7 +543,7 @@ ES6 (ECMAScript 2015) হলো JavaScript-এর standard, আর TypeScript �
 - **Tooling**: TypeScript better IDE support এবং type inference প্রদান করে।  
 উদাহরণ: TypeScript-এ `function greet(name: string): string { return "Hello " + name; }` type-safe, ES6-এ `function greet(name) { return "Hello " + name; }`।
 
-✅ 2. Type System
+## ✅ 2. Type System
 ### _#06._ 🔵 What is a type in TypeScript?
 
 TypeScript-এ type হলো একটি mechanism যা variables, parameters, বা return values-এর data structure বা behavior define করে। এটি static type checking সমর্থন করে, যা compile time-এ errors ধরতে সাহায্য করে। Types built-in (e.g., `number`, `string`) বা custom (e.g., interfaces, type aliases) হতে পারে। উদাহরণ: `let age: number = 30;` এখানে `number` হলো type। Types code-এর predictability এবং maintainability বাড়ায়।
@@ -655,7 +655,7 @@ console.log(c); // 1
 ```
 Enums numeric (default), string, বা mixed হতে পারে। উদাহরণ: `enum Status { Active = "ACTIVE", Inactive = "INACTIVE" }`। Enums code readability এবং maintainability উন্নত করে। Compile হলে JavaScript object-এ convert হয়।
 
-✅ 3. Functions
+## ✅ 3. Functions
 ### _#16._ 🔵 How do you define a function with typed parameters and return value?
 
 TypeScript-এ function-এর parameters এবং return value-এর types explicitly define করা যায়। Syntax-এ parameter-এর পর `:` এবং type, এবং return type-এর জন্য function signature-এর পর `:` ব্যবহৃত হয়।  
@@ -743,7 +743,7 @@ TypeScript-এ function type define করতে type alias, interface, বা i
   ```
 Function types reusable signatures তৈরি করে এবং callback functions বা APIs-এ type safety প্রদান করে।
 
-✅ 4. Interfaces & Objects
+## ✅ 4. Interfaces & Objects
 ### _#21._ 🔵 What is an interface in TypeScript?
 
 Interface হলো TypeScript-এর একটি feature যা object-এর shape বা structure define করে। এটি properties, methods, এবং তাদের types specify করে, যা type safety নিশ্চিত করে। Interfaces compile-time checking-এর জন্য ব্যবহৃত হয় এবং JavaScript-এ compile হয় না।  
@@ -859,7 +859,7 @@ type UserType = {
 ```
 Nested objects complex data structures (e.g., API responses) handle করতে type safety প্রদান করে।
 
-✅ 5. Classes in TypeScript
+## ✅ 5. Classes in TypeScript
 ### _#27._ 🔵 How do you define a class in TypeScript?
 
 TypeScript-এ class define করতে `class` keyword ব্যবহার করা হয়, যা ES6 classes-এর extension। Class-এ properties, methods, এবং constructor থাকতে পারে, এবং TypeScript type annotations এবং access modifiers যোগ করে।  
@@ -1001,7 +1001,7 @@ const shape = new Shape(); // Error: Cannot create an instance of an abstract cl
 ```
 Abstract classes polymorphism এবং common functionality share করতে ব্যবহৃত।
 
-✅ 6. Generics
+## ✅ 6. Generics
 ### _#32._ 🔵 What are generics in TypeScript?
 
 Generics হলো TypeScript-এর একটি feature যা reusable এবং type-safe code লিখতে সাহায্য করে। এটি functions, classes, বা interfaces-এ type parameters ব্যবহার করে, যা specific types-এর পরিবর্তে placeholder হিসেবে কাজ করে। Generics type safety বজায় রেখে flexibility প্রদান করে।  
@@ -1082,7 +1082,7 @@ Multiple generics complex scenarios handle করে, যেমন different typ
 const result2 = merge({ x: 1 }, { y: "test" }); // Inferred as { x: number } & { y: string }
 ```
 
-✅ 7. Advanced Types
+## ✅ 7. Advanced Types
 ### _#37._ 🔵 What are mapped types in TypeScript?
 
 Mapped types হলো TypeScript-এর একটি feature যা existing type-এর properties-কে transform করে নতুন type তৈরি করে। এটি object types-এর keys iterate করে নতুন structure generate করে। Syntax: `{ [K in keyof T]: Type }`।  
@@ -1174,7 +1174,7 @@ const config = { size: 10, theme: "dark" } as const;
 // { readonly size: 10; readonly theme: "dark" }
 ```
 
-✅ 8. Utility Types
+## ✅ 8. Utility Types
 ### _#44._ 🔵 **What is `Partial<T>` and how is it used?**
 
 `Partial<T>` হলো TypeScript-এর একটি utility type যা একটি object type-এর সব প্রোপার্টিকে optional করে দেয়। মানে, ধরুন আপনার কাছে একটা interface আছে যেখানে কিছু প্রোপার্টি mandatory, কিন্তু আপনি চান সেই প্রোপার্টিগুলো optional হোক কোনো নির্দিষ্ট ক্ষেত্রে। তখন `Partial<T>` ব্যবহার করা হয়।
@@ -1322,7 +1322,7 @@ type Extracted = Extract<MyUnion, "a" | "c">;
 ```
 **Use case:** `Exclude` ব্যবহার করি যখন কোনো union type থেকে নির্দিষ্ট member বাদ দিতে চাই। `Extract` ব্যবহার করি যখন শুধু নির্দিষ্ট member বেছে নিতে চাই।
 
-✅ 9. Type Guards & Safety
+## ✅ 9. Type Guards & Safety
 ### _#50._ 🔵 **What are type guards in TypeScript?**
 
 Type guards হলো TypeScript-এর এমন একটি মেকানিজম যা runtime-এ কোনো variable-এর specific type নির্ধারণ করতে সাহায্য করে। এর মাধ্যমে আমরা type narrowing করতে পারি, যাতে TypeScript compiler জানতে পারে কোনো variable কোন type-এর। এটা conditional logic ব্যবহার করে কাজ করে।
@@ -1425,7 +1425,7 @@ function getArea(shape: Shape) {
 
 **Use case:** Discriminated union ব্যবহার করি যখন একাধিক related types নিয়ে কাজ করি এবং তাদের unique identifier দিয়ে logic handle করতে হয়, যেমন shape calculations বা API response parsing-এ।
 
-✅ 10. Modules and Tooling
+## ✅ 10. Modules and Tooling
 ### _#53._ 🔵 **How do you import and export modules in TypeScript?**
 
 TypeScript-এ modules import এবং export করার পদ্ধতি JavaScript-এর ES Modules-এর মতোই, তবে TypeScript type safety এবং type annotations যোগ করে। আমরা `import` এবং `export` keywords ব্যবহার করি।
@@ -1547,7 +1547,7 @@ declare module "my-lib" {
 **Use case:** Ambient declarations ব্যবহার করি যখন আমরা JavaScript libraries বা global objects-এর জন্য type safety চাই, কিন্তু তাদের implementation আমাদের control-এ নেই।
 
 
-✅ 11. React with TypeScript (Bonus if using React)
+## ✅ 11. React with TypeScript (Bonus if using React)
 ### _#57._ 🔵 **How do you type props and state in a React component?**
 
 TypeScript-এ React component-এর props এবং state টাইপ করার জন্য আমরা interface বা type ব্যবহার করি। Functional components এবং class components-এর ক্ষেত্রে পদ্ধতি একটু ভিন্ন।
@@ -1760,7 +1760,7 @@ const MyComponent = () => {
 
 
 # ✨ React based interview questions
-✅ 1. Basics & Introduction
+## ✅ 1. Basics & Introduction
 ### _#01._ 🟣 **What is ReactJS and why is it used?**
 
 ReactJS হলো একটি open-source JavaScript library যা Facebook দ্বারা develop করা হয়েছে, মূলত user interface (UI) তৈরি করার জন্য, বিশেষ করে single-page applications (SPAs)-এর জন্য। এটা component-based architecture follow করে, যা UI-কে reusable এবং modular করে।
@@ -1921,7 +1921,7 @@ Single-Page Application (SPA) হলো এমন একটি web application �
 **Use case:** Babel React-এর modern syntax support করে, আর Webpack assets bundle করে app-কে fast এবং production-ready করে।
 
 
-✅ 2. Props & State
+## ✅ 2. Props & State
 ### _#09._ 🟣 **What is props in React?**
 
 Props (properties) হলো React-এ একটি component-এর input, যা parent component থেকে child component-এ data পাঠানোর জন্য ব্যবহৃত হয়। Props read-only, অর্থাৎ child component-এ এগুলো modify করা যায় না।
@@ -2102,7 +2102,7 @@ const List = ({ items }) => (
 **Use case:** `key` prop ব্যবহার করি lists efficiently render করতে এবং unnecessary re-renders এড়াতে।
 
 
-✅ 3. Hooks
+## ✅ 3. Hooks
 ### _#15._ 🟣 **What is a hook in React?**
 
 React-এ Hook হলো special functions যা functional components-এ state, lifecycle features, এবং অন্যান্য React functionalities ব্যবহার করতে দেয়। Hooks React 16.8-এ introduce করা হয়েছে, যাতে class components ছাড়াই complex logic handle করা যায়।
@@ -2456,7 +2456,7 @@ const MyComponent = () => {
 **Use case:** Custom hooks ব্যবহার করি API fetching, form handling, বা reusable behaviors (যেমন window size tracking) implement করতে।
 
 
-✅ 4. Advanced Hooks & Concepts
+## ✅ 4. Advanced Hooks & Concepts
 ### _#25._ 🟣 **What is the difference between a custom hook and a higher-order component (HOC)?**
 
 | **Aspect**              | **Custom Hook**                                              | **Higher-Order Component (HOC)**                             |
@@ -2760,7 +2760,7 @@ const ScrollTracker = () => {
 - **Throttling:** Scroll events, resize events, বা rapid button clicks handle করতে।
 
 
-✅ 5. Lifecycle & Rendering
+## ✅ 5. Lifecycle & Rendering
 ### _#34._ 🟣 **What is the component lifecycle in React?**
 
 React-এ component lifecycle হলো একটি component-এর জীবনচক্র, যা তিনটি প্রধান phase নিয়ে গঠিত: **Mounting**, **Updating**, এবং **Unmounting**। প্রতিটি phase-এ নির্দিষ্ট events বা methods ঘটে, যা component-এর creation, update, এবং destruction-এর সাথে সম্পর্কিত।
@@ -2992,7 +2992,7 @@ const MyComponent = () => <div>Hello</div>;
 **Use case:** Virtual DOM React-এ fast এবং efficient rendering নিশ্চিত করে।
 
 
-✅ 6. Forms & Events
+## ✅ 6. Forms & Events
 ### _#43._ 🟣 **How do you handle forms in React?**
 
 React-এ forms handle করার জন্য সাধারণত দুটি approach ব্যবহৃত হয়: **controlled components** এবং **uncontrolled components**। বেশিরভাগ ক্ষেত্রে controlled components ব্যবহার করা হয় কারণ এটা React-এর state-driven philosophy-এর সাথে consistent।
@@ -3244,7 +3244,7 @@ const MyForm = () => {
 **Use case:** Input validation ব্যবহার করি user input সঠিক কিনা check করতে এবং user-friendly error messages দেখাতে।
 
 
-✅ 7. Routing, State Management, and Tools
+## ✅ 7. Routing, State Management, and Tools
 ### _#47._ 🟣 **What is React Router and how does it work?**
 
 React Router হলো React-এর জন্য একটি জনপ্রিয় routing library যা single-page applications (SPAs)-এ client-side navigation handle করে। এটা URL-এর ভিত্তিতে components render করে এবং page refresh ছাড়াই navigation সম্ভব করে।
@@ -3546,7 +3546,7 @@ Redux-এর কিছু জনপ্রিয় alternatives:
 
 
 
-✅ 8. Testing & Best Practices
+## ✅ 8. Testing & Best Practices
 ### _#54._ 🟣 **How do you test a React component?**
 
 React components-কে test করার জন্য সাধারণত **unit testing** এবং **integration testing** করা হয়। React Testing Library বা Jest-এর মতো tools ব্যবহার করে components-এর behavior, rendering, এবং user interactions test করা হয়।
@@ -3767,7 +3767,7 @@ Clean React code লেখার জন্য কিছু best practices:
 **Use case:** Clean code maintainability, scalability, এবং collaboration উন্নত করে এবং technical debt কমায়।
 
 
-✅ 9. Miscellaneous
+## ✅ 9. Miscellaneous
 ### _#58._ 🟣 **What is React Portals and why is it used?**
 
 React Portals হলো React-এর একটি feature যা একটি component-এর DOM tree-এর বাইরে অন্য কোনো DOM node-এ child components render করতে দেয়, যদিও component hierarchy-তে এটি parent-এর অধীনে থাকে। এটা `ReactDOM.createPortal` API ব্যবহার করে implement করা হয়।

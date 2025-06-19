@@ -5,13 +5,14 @@
 
 ✅ JavaScript Basics
 #### _#01._ What is JavaScript and why is it used?
-জাভাস্ক্রিপ্ট একটা **programming language**, যেটা ওয়েবসাইটে **interactive** ফিচার তৈরি করতে use হয় — যেমন: button click করলে কিছু হওয়া, data load হওয়া, animations, ইত্যাদি।
+```জাভাস্ক্রিপ্ট একটা **programming language**, যেটা ওয়েবসাইটে **interactive** ফিচার তৈরি করতে use হয় — যেমন: button click করলে কিছু হওয়া, data load হওয়া, animations, ইত্যাদি।
 
 এইটা **browser-এর ভিতরে run করে**, আর ওয়েবপেজে **dynamic behavior** অ্যাড করতে help করে।
 
 উদাহরণ হিসেবে ধরেন, একটা ফর্মে user কিছু লিখছে, সাথে সাথে validation দেখানো — এইটাও JavaScript দিয়েই হয়।
 
 তাই JavaScript use করা হয় mainly **user experience enhance করার জন্য** এবং **frontend behavior control করার জন্য**।
+```
 
 
 #### _#02._ What is the difference between JavaScript and other programming languages?

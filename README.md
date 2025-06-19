@@ -5,7 +5,29 @@
 
 ✅ JavaScript Basics
 #### _#01._ What is JavaScript and why is it used?
+জাভাস্ক্রিপ্ট একটা **programming language**, যেটা ওয়েবসাইটে **interactive** ফিচার তৈরি করতে use হয় — যেমন: button click করলে কিছু হওয়া, data load হওয়া, animations, ইত্যাদি।
+
+এইটা **browser-এর ভিতরে run করে**, আর ওয়েবপেজে **dynamic behavior** অ্যাড করতে help করে।
+
+উদাহরণ হিসেবে ধরেন, একটা ফর্মে user কিছু লিখছে, সাথে সাথে validation দেখানো — এইটাও JavaScript দিয়েই হয়।
+
+তাই JavaScript use করা হয় mainly **user experience enhance করার জন্য** এবং **frontend behavior control করার জন্য**।
+
+
 #### _#02._ What is the difference between JavaScript and other programming languages?
+JavaScript এর কিছু unique feature আছে, যেটা অন্য অনেক language থেকে একে আলাদা করে তোলে।
+
+**প্রথমত**, JavaScript মূলত **browser-based language** — মানে এটা আগে শুধু browser-এর ভিতরে run করত। এখন অবশ্য Node.js এর মাধ্যমে **server-side**-এও run হয়।
+
+**দ্বিতীয়ত**, JavaScript একটা **dynamically typed language**, মানে variable declare করার সময় type define করতে হয় না — automatically বুঝে ফেলে। কিন্তু Java, C++, এসব হচ্ছে **statically typed** — সেখানে type declare করতেই হয়।
+
+**তৃতীয়ত**, JavaScript support করে **event-driven**, **asynchronous programming**, যেখানে অনেক কাজ background-এ চলতে পারে — যেমন API call, file load ইত্যাদি — যেটা অনেক language-এ সহজভাবে করা যায় না।
+
+**আরো একটা বড় পার্থক্য**, JavaScript এর **prototype-based inheritance**, যেখানে Java বা C++ use করে **class-based inheritance**। এখন অবশ্য JavaScript-এ class keyword আছে, but internally still prototype-ই।
+
+তো সংক্ষেপে বললে, JavaScript mainly used হয় **web-based dynamic functionality** build করার জন্য, যেখানে অন্যান্য language গুলো general-purpose বা অন্য type-এর application-এর জন্য use হয়।
+
+
 #### _#03._ What is the difference between null, undefined, and NaN?
 #### _#04._ What is the difference between var, let, and const?
 #### _#05._ What is scope in JavaScript?

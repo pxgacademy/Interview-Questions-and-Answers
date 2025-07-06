@@ -11,6 +11,7 @@
 ### _#05._ 🟡 What is scope in JavaScript?
 ### _#06._ 🟡 What is lexical scope?
 
+
 ✅ Functions and Execution
 ### _#07._ 🟡 What is a function and how does it work?
 ### _#08._ 🟡 What is the difference between a regular function and an arrow function?
